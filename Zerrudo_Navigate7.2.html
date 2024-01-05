@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Links and Divs</title>
+    <style>
+        
+        a {
+            text-decoration: none;
+            padding: 2px;
+            border-radius: 4px;
+        }
+
+        
+        a:hover {
+            background-color: lightgray;
+        }
+
+        
+        a:active {
+            background-color: yellow;
+        }
+
+        
+        a:visited {
+            background-color: lavender;
+        }
+
+       
+        #first-link {
+            color: blue;
+            background-color: #cce5ff; 
+        }
+
+        
+        #first-link:hover {
+            color: red;
+            background-color: #b3d9ff; 
+        }
+
+        
+        #first-link:active {
+            color: green;
+            background-color: #99ccff; 
+        }
+
+        
+        #first-link:visited {
+            color: purple;
+            background-color: #f2f0ff; 
+        }
+
+       
+        #second-link {
+            color: brown;
+            background-color: #a6f0f9; 
+        }
+
+        
+        #second-link:hover {
+            color: orange;
+            background-color: #87e8ea; 
+        }
+
+        
+        #second-link:active {
+            color: darkgreen;
+            background-color: #69d8da; 
+        }
+
+        
+        #second-link:visited {
+            color: darkred;
+            background-color: #c7f2f6; 
+        }
+
+        
+        .box {
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #e0e0e0;
+        }
+
+        .div1:target {
+            background-color: lightcyan;
+            color: darkblue;
+        }
+
+        .div2:target {
+            border: 10px dotted green;
+        }
+    </style>
+</head>
+<body>
+    <a href="#div1" id="first-link">First Link</a><br>
+    <a href="#div2" id="second-link">Second Link</a><br>
+
+    <div class="box div1" id="div1">First Div</div>
+    <div class="box div2" id="div2">Second Div</div>
+</body>
+</html>
